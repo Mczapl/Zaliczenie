@@ -11,4 +11,4 @@ Feature: CodersLab portal
 
     Examples:
       | login       | pass         | alias | address     | city     | zip_code | country | phone       |
-      | mcz@test.pl | 123456qwerty | Mr   | Wolnosci 55 | Warszawa | 00-100   | Polska  | 600-000-001 |
+      | mcz@test.pl | 123456qwerty | Mr   | Wolnosci 55 | London | 00-100   | Polska  | 600-000-001 |

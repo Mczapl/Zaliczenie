@@ -27,6 +27,7 @@ public class NewAddressPage {
         cityForm.click();
         cityForm.clear();
         cityForm.sendKeys(city);
+
     }
 
 }

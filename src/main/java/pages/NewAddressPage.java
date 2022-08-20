@@ -15,8 +15,11 @@ public class NewAddressPage {
         WebElement aliasForm = driver.findElement(By.name("alias"));
         WebElement addressForm = driver.findElement(By.name("address1"));
         WebElement cityForm = driver.findElement(By.name("city"));
+        WebElement zipForm = driver.findElement(By.name("postcode"));
+        WebElement phoneForm = driver.findElement(By.name("phone"));
+        WebElement saveForm = driver.findElement(By.cssSelector("button.btn.btn-primary.float-xs-right"));
 
-
+        WebElement countryForm = driver.findElement(By.xpath("//*[text()='United Kingdom']"));
 
         aliasForm.click();
         aliasForm.clear();
@@ -27,6 +30,20 @@ public class NewAddressPage {
         cityForm.click();
         cityForm.clear();
         cityForm.sendKeys(city);
+        zipForm.click();
+        zipForm.clear();
+        zipForm.sendKeys(zipCode);
+        phoneForm.click();
+        phoneForm.clear();
+        phoneForm.sendKeys(phone);
+        if(countryForm.isDisplayed())
+        {
+            countryForm.click();
+        } else {
+            System.out.println("Element not found");
+        }
+        saveForm.click();
+
 
     }
 

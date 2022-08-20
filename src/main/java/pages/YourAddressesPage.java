@@ -12,7 +12,7 @@ public class YourAddressesPage {
     }
 
     public void addAddress(){
-        WebElement newAddress = driver.findElement(By.xpath("//section[@id='content']/div[3]/a/span"));
+        WebElement newAddress = driver.findElement(By.xpath("//section[@id='content']/div[2]/a/span"));
         newAddress.click();
     }
 }

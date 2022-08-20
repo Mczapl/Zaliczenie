@@ -12,7 +12,7 @@ public class YourAccountPage {
     }
 
     public void addressTile(){
-        WebElement addressesButton = driver.findElement(By.id("addresses-link"));
+        WebElement addressesButton = driver.findElement(By.xpath("//a[contains(text(),'Addresses')]"));
         addressesButton.click();
     }
 }

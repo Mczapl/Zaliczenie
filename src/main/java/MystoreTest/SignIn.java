@@ -61,6 +61,6 @@ public class SignIn {
     @Then("User delete the address and check if successfully deleted")
     public void userDeleteTheAddressAndCheckIfSuccessfullyDeleted() {
         AddressesPage onAddressPage = new AddressesPage(driver);
-        onAddressPage.delete();
+        //onAddressPage.delete();
     }
 }

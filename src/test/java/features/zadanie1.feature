@@ -1,4 +1,4 @@
-Feature: CodersLab portal
+Feature: CodersLab portal zadanie 1
 
   Scenario Outline: Logging into Mystore  portal
     Given User is on "https://mystore-testlab.coderslab.pl/" Page

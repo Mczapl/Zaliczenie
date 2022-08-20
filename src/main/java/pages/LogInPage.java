@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.sql.Driver;
 
 public class LogInPage {
-    private WebDriver driver;
+    public WebDriver driver;
 
     public LogInPage(WebDriver driver) {
         this.driver = driver;

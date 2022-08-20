@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class AddressesPage {
-    private WebDriver driver;
+    public WebDriver driver;
 
     public AddressesPage(WebDriver driver){
         this.driver = driver;

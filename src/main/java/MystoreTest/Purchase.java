@@ -61,5 +61,6 @@ public class Purchase {
     public void userTakeAScreenshotToOfThePageWithConfirmation() throws IOException {
         ScreenShot onScreenShot = new ScreenShot(driver);
         onScreenShot.saveWholePageScreenshot();
+        driver.quit();
     }
 }

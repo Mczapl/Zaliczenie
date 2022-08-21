@@ -25,5 +25,4 @@ public class ItemPage {
         WebElement proceed = driver.findElement(By.cssSelector("a.btn.btn-primary"));
         proceed.click();
     }
-
 }

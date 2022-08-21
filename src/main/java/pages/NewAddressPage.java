@@ -1,8 +1,6 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 public class NewAddressPage {
     public WebDriver driver;
@@ -18,7 +16,6 @@ public class NewAddressPage {
         WebElement zipForm = driver.findElement(By.name("postcode"));
         WebElement phoneForm = driver.findElement(By.name("phone"));
         WebElement saveForm = driver.findElement(By.cssSelector("button.btn.btn-primary.float-xs-right"));
-
         WebElement countryForm = driver.findElement(By.xpath("//*[text()='United Kingdom']"));
 
         aliasForm.click();
@@ -36,15 +33,11 @@ public class NewAddressPage {
         phoneForm.click();
         phoneForm.clear();
         phoneForm.sendKeys(phone);
-        if(countryForm.isDisplayed())
-        {
+        if (countryForm.isDisplayed()) {
             countryForm.click();
         } else {
             System.out.println("Element not found");
         }
         saveForm.click();
-
-
     }
-
 }

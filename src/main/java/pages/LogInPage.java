@@ -1,10 +1,6 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import java.sql.Driver;
+import org.openqa.selenium.*;
 
 public class LogInPage {
     public WebDriver driver;
@@ -12,7 +8,8 @@ public class LogInPage {
     public LogInPage(WebDriver driver) {
         this.driver = driver;
     }
-    public void LogIn(String email, String password){
+
+    public void LogIn(String email, String password) {
         WebElement emailInput = driver.findElement(By.name("email"));
         WebElement passwordInput = driver.findElement(By.name("password"));
 
@@ -23,9 +20,9 @@ public class LogInPage {
         passwordInput.click();
         passwordInput.clear();
         passwordInput.sendKeys(password);
-
     }
-    public  void LogInSubmit(){
+
+    public void LogInSubmit() {
         WebElement submitButton = driver.findElement(By.id("submit-login"));
         submitButton.click();
     }

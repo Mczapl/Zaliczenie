@@ -1,8 +1,6 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 public class YourAccountPage {
     public WebDriver driver;
@@ -11,7 +9,7 @@ public class YourAccountPage {
         this.driver = driver;
     }
 
-    public void addressTile(){
+    public void addressTile() {
         WebElement addressesButton = driver.findElement(By.xpath("//a[contains(text(),'Addresses')]"));
         addressesButton.click();
     }

@@ -17,7 +17,7 @@ public class ItemPage {
         Select sel = new Select(size);
         sel.selectByValue("2");
          for (int i=0; i < 4; i ++) {
-        qty.click();;
+        Znalezc button wiecej
          }
         */qty.click();
         qty.sendKeys(Keys.CONTROL, "a");

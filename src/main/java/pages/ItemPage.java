@@ -16,12 +16,15 @@ public class ItemPage {
         //WebElement addTo = driver.findElement(By.xpath("//form[@id='add-to-cart-or-refresh']/div[2]/div/div[2]/button"));
         Select sel = new Select(size);
         sel.selectByValue("2");
-        qty.click();
+         for (int i=0; i < 4; i ++) {
+        qty.click();;
+         }
+        */qty.click();
         qty.sendKeys(Keys.CONTROL, "a");
         Thread.sleep(100);
         qty.sendKeys(Keys.DELETE);
         qty.sendKeys("5");
-        qty.sendKeys(Keys.ENTER);
+        qty.sendKeys(Keys.ENTER);/*
         WebElement proceed = driver.findElement(By.cssSelector("a.btn.btn-primary"));
         proceed.click();
     }

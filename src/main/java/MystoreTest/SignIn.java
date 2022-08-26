@@ -19,33 +19,32 @@ public class SignIn {
         driver.get(webpage);
     }
 
-    @Then("User click on SignIn button")
+    @When("User click on SignIn button")
     public void userClickOnSignInButton() {
         LandingPage onLandingPage = new LandingPage(driver);
         onLandingPage.signIn();
     }
 
-    @Then("user enters {string} and {string}")
+    @And("user enters {string} and {string}")
     public void userEntersAnd(String login, String pass) {
         LogInPage onLogInPage = new LogInPage(driver);
         onLogInPage.LogIn(login, pass);
         onLogInPage.LogInSubmit();
     }
 
-    @Then("User click on Addresses tile")
+    @Then("User see a Addresses tile and click it")
     public void userClickOnAddressesTile() {
         YourAccountPage onYourAccountPage = new YourAccountPage(driver);
         onYourAccountPage.addressTile();
     }
 
-    @Then("User click on Create button")
+    @And("User click on Create button")
     public void userClickOnCreateButton() {
         YourAddressesPage onYourAddressesPage = new YourAddressesPage(driver);
         onYourAddressesPage.addAddress();
     }
 
-
-    @Then("User fill up the form with {string}, {string}, {string}, {string}, {string} and {string}")
+    @When("User fill up the form with {string}, {string}, {string}, {string}, {string} and {string}")
     public void userFillUpTheFormWithAnd(String alias, String address, String city, String zip_code, String country, String phone) {
         NewAddressPage onNewAddressPage = new NewAddressPage(driver);
         onNewAddressPage.addressForm(alias, address, city, zip_code, country, phone);

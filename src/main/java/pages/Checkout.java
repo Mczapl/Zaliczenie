@@ -18,13 +18,14 @@ public class Checkout {
         shippingAccept.click();
     }
 
-    public void order (){
+    public void order () throws InterruptedException {
         WebElement payByCheck = driver.findElement(By.id("payment-option-1"));
         WebElement checkBox = driver.findElement(By.id("conditions_to_approve[terms-and-conditions]"));
         WebElement orderButton = driver.findElement(By.cssSelector("button.btn.btn-primary.center-block"));
 
         payByCheck.click();
         checkBox.click();
+        Thread.sleep(100);
         orderButton.click();
     }
 }

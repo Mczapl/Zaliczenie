@@ -32,7 +32,7 @@ public class Purchase {
         onHeaderPage.logo();
     }
 
-    @Then("User click on Hummingbird Printed Sweater")
+    @When("User click on Hummingbird Printed Sweater")
     public void userClickOnHummingbirdPrintedSweater() {
         HomePage onHomePage = new HomePage(driver);
         onHomePage.selectItem();
@@ -44,17 +44,16 @@ public class Purchase {
         onItemPage.addToCart();
     }
 
-    @Then("User go to checkout and finalize the purchase")
+    @When("User go to checkout and accept the address and shipping method")
     public void userGoToCheckoutAndFinalizeThePurchase() {
         Checkout onCheckout = new Checkout(driver);
         onCheckout.buy();
     }
 
     @And("User select Payment Method Pay by Check, click the checkbox and Order")
-    public void userSelectPaymentMethodPayByCheckClickTheCheckboxAndOrder() {
+    public void userSelectPaymentMethodPayByCheckClickTheCheckboxAndOrder() throws InterruptedException {
         Checkout onCheckout = new Checkout(driver);
         onCheckout.order();
-
     }
 
     @Then("User take a screenshot of the page with confirmation")

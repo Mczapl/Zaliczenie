@@ -12,19 +12,18 @@ public class ItemPage {
 
     public void addToCart() throws InterruptedException {
         WebElement size = driver.findElement(By.id("group_1"));
-        WebElement qty = driver.findElement(By.id("quantity_wanted"));
-        //WebElement addTo = driver.findElement(By.xpath("//form[@id='add-to-cart-or-refresh']/div[2]/div/div[2]/button"));
+        WebElement qty = driver.findElement(By.cssSelector("button.btn.btn-touchspin.js-touchspin.bootstrap-touchspin-up"));
+
         Select sel = new Select(size);
         sel.selectByValue("2");
-         for (int i=0; i < 4; i ++) {
-        Znalezc button wiecej
-         }
-        */qty.click();
-        qty.sendKeys(Keys.CONTROL, "a");
-        Thread.sleep(100);
-        qty.sendKeys(Keys.DELETE);
-        qty.sendKeys("5");
-        qty.sendKeys(Keys.ENTER);/*
+        for (int i = 0; i < 5; i++) {
+            qty.click();
+            Thread.sleep(500);
+        }
+
+        WebElement addTo = driver.findElement(By.cssSelector("button.btn.btn-primary.add-to-cart"));
+        addTo.click();
+
         WebElement proceed = driver.findElement(By.cssSelector("a.btn.btn-primary"));
         proceed.click();
     }

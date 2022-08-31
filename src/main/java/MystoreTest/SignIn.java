@@ -53,8 +53,8 @@ public class SignIn {
 
     @And("User Check if form was filled with legit data {string}, {string}, {string}, {string}, {string} and {string}")
     public void userCheckIfFormWasFilledWithLegitDataAnd(String alias, String address, String city, String zip_code, String country, String phone) {
-    AddressesPage onAddressesPage = new AddressesPage(driver);
-    onAddressesPage.checkForm(alias, address, city, zip_code, phone);
+        AddressesPage onAddressesPage = new AddressesPage(driver);
+        onAddressesPage.checkForm(alias, address, city, zip_code, phone);
     }
 
     @Then("User delete the address and check if successfully deleted")

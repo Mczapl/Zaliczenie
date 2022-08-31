@@ -1,8 +1,6 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 public class HomePage {
     public WebDriver driver;
@@ -11,9 +9,8 @@ public class HomePage {
         this.driver = driver;
     }
 
-    public void selectItem(){
+    public void selectItem() {
         WebElement sweater = driver.findElement(By.xpath("//*[text()='Hummingbird printed sweater']"));
         sweater.click();
     }
-
 }

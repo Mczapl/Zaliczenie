@@ -1,8 +1,6 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 public class HeaderPage {
     public WebDriver driver;
@@ -11,7 +9,7 @@ public class HeaderPage {
         this.driver = driver;
     }
 
-    public void logo(){
+    public void logo() {
         WebElement logo = driver.findElement(By.cssSelector("img.logo.img-responsive"));
         logo.click();
     }

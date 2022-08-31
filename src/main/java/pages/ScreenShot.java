@@ -3,10 +3,10 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import ru.yandex.qatools.ashot.*;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+
 import javax.imageio.ImageIO;
 import java.io.*;
 import java.sql.Timestamp;
-
 
 public class ScreenShot {
     public WebDriver driver;

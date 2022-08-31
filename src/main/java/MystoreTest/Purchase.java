@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit;
 public class Purchase {
     WebDriver driver;
 
-
     @Given("Given User is on {string} Page")
     public void givenUserIsOnPage(String webpage) {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");

@@ -9,7 +9,7 @@ public class Checkout {
         this.driver = driver;
     }
 
-    public void buy (){
+    public void buy() {
         WebElement proceedToCheckout = driver.findElement(By.cssSelector("a.btn.btn-primary"));
         proceedToCheckout.click();
         WebElement addresAccept = driver.findElement(By.cssSelector("button.btn.btn-primary.continue.float-xs-right"));
@@ -18,7 +18,7 @@ public class Checkout {
         shippingAccept.click();
     }
 
-    public void order () throws InterruptedException {
+    public void order() throws InterruptedException {
         WebElement payByCheck = driver.findElement(By.id("payment-option-1"));
         WebElement checkBox = driver.findElement(By.id("conditions_to_approve[terms-and-conditions]"));
         WebElement orderButton = driver.findElement(By.cssSelector("button.btn.btn-primary.center-block"));
